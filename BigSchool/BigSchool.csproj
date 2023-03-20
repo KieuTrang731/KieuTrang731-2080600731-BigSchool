@@ -191,6 +191,10 @@
     <Compile Include="Migrations\202303070844226_CreateTableCourse1.designer.cs">
       <DependentUpon>202303070844226_CreateTableCourse1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303201328170_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\202303201328170_AddNameColumnToApplicationUser.designer.cs">
+      <DependentUpon>202303201328170_AddNameColumnToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -198,10 +202,11 @@
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\FutureDate.cs" />
+    <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -289,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303070844226_CreateTableCourse1.resx">
       <DependentUpon>202303070844226_CreateTableCourse1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303201328170_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>202303201328170_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

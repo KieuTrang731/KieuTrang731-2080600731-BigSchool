@@ -16,9 +16,18 @@ namespace BigSchool.Controllers
         {
             _dbContext = new ApplicationDbContext();
         }
-        // GET: Courses
+        [Authorize]
+        public ActionResult Create()
+        {
+            var viewModel = new CourseViewModel
+            {
+                Categories = _dbContext.Categories.ToList()
+            };
+            return View(viewModel);
+        }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if (!ModelState.IsValid)
