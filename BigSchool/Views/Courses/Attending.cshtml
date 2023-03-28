@@ -1,6 +1,7 @@
 ﻿@model BigSchool.ViewModels.CoursesViewModel
 @{
     ViewBag.Title = "Attending";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Attending</h2>
@@ -31,7 +32,6 @@
                 @if (Model.ShowAction)
                 {
                     <button data-course-id="@course.Id" class="btn btn-default btn-sm js-toggle-attendance">Going?</button>
-
                 }
             </div>
         </li>
